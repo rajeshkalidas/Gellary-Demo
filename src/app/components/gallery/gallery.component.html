@@ -1,0 +1,5 @@
+<div class="gallery-container">
+    <mat-card class="gallery-card" *ngFor="let item of galleryList">
+        <img mat-card-image [src]="item.thumbImage" (click)="onImageClickHandler(item)" >
+      </mat-card>
+</div>

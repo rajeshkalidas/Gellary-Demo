@@ -1,0 +1,17 @@
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+   <span>Gallery Demo</span>
+  </div>
+
+  <!-- Container -->
+  <div class="content" role="main">
+    <div class="header-btns">
+      <mat-icon class="cursor" (click)="openDialog()">add</mat-icon>
+      <mat-icon class="cursor" (click)="onSortClickHandler()">{{sortIcon}}</mat-icon>
+    </div>
+
+    <div class="cards-container" cdkDropList (cdkDropListDropped)="drop($event)">
+       <app-card class="card" *ngFor="let item of cardsList" [cardInfo]="item" (onClickDeleteHandler)="onCardDeleteHandler($event)" cdkDrag></app-card>
+    </div>
+  </div>

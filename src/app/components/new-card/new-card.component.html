@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+  <h1 mat-dialog-title>Add Title</h1>
+  <mat-dialog-content>
+    <mat-form-field>
+      <input matInput formControlName="title" placeholder="Enter title here">
+    </mat-form-field>
+  </mat-dialog-content>
+  <img mat-card-image *ngIf="showImage" [src]="selectedImageDetails.thumbImage" (click)="onImageClickHandler()" >
+  <button mat-button class="cursor" >Add Photo</button>
+  <mat-dialog-actions>
+    <button mat-button class="cursor" type="submit" (click)="submit(form)">Add</button>
+    <button mat-button class="cursor" type="button" mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</form>

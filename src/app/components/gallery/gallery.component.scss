@@ -1,0 +1,10 @@
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery-card {
+  flex: 0 0 25%;
+  margin: 10px;
+}
