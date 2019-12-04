@@ -1,6 +1,6 @@
 # Front-End
 
-Notebook cards 
+Notebook cards (http://cards-demo.surge.sh/gallery-view)
 
 * All cards that are in the notebook are shown on the main screen
 * Possible to create new cards in the notebook
